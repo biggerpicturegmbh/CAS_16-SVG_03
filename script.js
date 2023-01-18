@@ -175,9 +175,7 @@ document.addEventListener("keypress", keyHandlerSave);
 
 const keyHandlerReload = (event) => {
         if (event.key === " ") {
-                history.pushState(null, null, `?seed=${newFxhashValue}`)
-                newFxhashValue = BuildFxhash()
-                
+                history.pushState(null, null, `?seed=${fxhash}`)
         }
 };
 
